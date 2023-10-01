@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 60%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100vh;
+
+  background: #f3f8ff;
+}
+
+.text-content {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center
+}
+
+.text-content h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-content img {
+  max-width: 100%;
+}
+
+.box-calculo {
+  background: #0F1216;
+  border-radius: 4rem 0 0 0rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-calculo img {
+  width: 25rem;
+  margin-top: 2rem;
+}
+
+.form {
+  margin-top: 2rem;
+  width: 90%;
+}
+
+
+
+.form .input-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.box-calculo label {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.box-calculo input {
+  width: 100%;
+  height: 5.6rem;
+  background: #fafafc;
+
+  border: 0.1rem solid #e6e6f0;
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+
+  text-align: center;
+}
+
+.box-calculo input::placeholder {
+  color: #9c98a6;
+}
+
+.box-calculo button {
+  width: 18.8rem;
+  height: 5.7rem;
+  background: #A6F750;
+  color: #000000;
+
+  border: none;
+  border-radius: 3.6rem;
+
+  text-align: center;
+  margin-top: 1rem;
+
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.box-calculo button:hover {
+  background: #74d012;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-gap: 2rem;
+}
+
+/* css do resultado no js */
+.result-info {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  width: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.result-block {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.result-block img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.result-block p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+
+}
+
+.modal-content {
+  background-color: #0F1216;
+  color: white;
+  margin: 5% auto;
+  padding: 20px;
+  border: none;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.modal-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-content h3 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #A6F750;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ok-button {
+  background-color: #A6F750;
+  color: #000000;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  /* Adiciona espaço entre o texto e o botão */
+}
+
+.ok-button:hover {
+  background-color: #74d012;
+}
+
+
+/* Desktop Responsivity */
+
+@media (min-width: 700px) {
+  * {
+    overflow: hidden;
+  }
+
+  .text-content h1 {
+    font-size: 4rem;
+    width: 50rem;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box-calculo {
+    height: 100vh;
+    background: #0F1216;
+    border-radius: 4rem 0 0 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form {
+    margin-top: 2rem;
+    width: 70%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0;
+  }
+}
+
+/* Mobile Responsivity */
+
+@media (max-width: 700px) {
+  #resultado {
+    width: 90%;
+  }
+
+  .result-info {
+    margin-bottom: 3rem;
+  }
+
+  .result-block {
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+  }
+}
