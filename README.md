@@ -12,7 +12,14 @@ Este projeto foi desenvolvido para a Turma 1004 do programa Santander Coders. É
 ## Como Usar 🚀
 
 1. Faça o download ou clone o repositório.
-2. Abra o arquivo `index.html` em seu navegador web.
+2. Abra o arquivo `login.html` em seu navegador web.
+3. Acesse a opção de criar a sua conta `Crie a sua conta aqui`.
+4. Teste a validação dos campos `E-mail`, `Nome`, `CEP`.
+5. Ao digitar o seu cep, confirme o endereço no botão `Confirmar endereço`
+6. Valide se o endereço contido está correto
+7. Preenchido os campos clique no botão de `Login`
+8. Ao entrar no churrascometro leia o Modal com as intrusções.
+9. Aproveite!
 
 ## Autor 👨‍💻
 
