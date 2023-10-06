@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="..//css/login.css" />
+        <link rel="stylesheet" href="../css/login.css" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous" />
 
-        <link rel="icon" href="../assets/logo-pokemon.png" />
-        <title>Login - Churrascometro</title>
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+        <title>Criando Conta - Churrascometro</title>
     </head>
     <body>
         <div class="wrapper">
@@ -29,36 +29,49 @@
                             </div>
 
                             <div class="input-field">
-                                <input type="email" class="input"
-                                    id="confirmEmail" required />
-                                <label for="confirmEmail">Insira o seu E-mail</label>
+                                <input type="text" class="input" id="email"
+                                    required autocomplete="off" />
+                                <label for="email">E-mail</label>
+                                <span class="info-icon"></span>
+                                <div class="info-message">Insira um e-mail
+                                    válido</div>
                             </div>
 
                             <div class="input-field">
                                 <input type="text" class="input" id="cep"
-                                    required autocomplete="off" />
+                                    required autocomplete="off" pattern="\d{8}" />
                                 <label for="cep">CEP</label>
+                                <div class="error-message">Insira um CEP válido</div>
+                                <div id="cepErrorMessage" class="error-message"
+                                    style="display:none">Favor inserir um CEP
+                                    válido</div>
                             </div>
-
                             <div class="input-field checkbox">
-                                <input type="checkbox" id="promocoes" />
-                                <label for="promocoes">Aceito receber e-mails
+                                <br>
+                                <input type="checkbox" id="promocoes"
+                                    checked />
+                                <label for="promocoes">Aceito receber
+                                    e-mails
                                     com promoções</label>
+                                <button id="confirmAddressBtn"
+                                    class="btn submit" style="display:none">Confirmar
+                                    Endereço</button>
                             </div>
                             <a href="index.html" class="btn">
                                 <div class="input-field login">
                                     <input type="submit" class="submit"
+                                        id="submitBtn"
                                         value="Login" /></a>
-                            </div>
-                            <div class="signin">
-                                <span>Esqueceu a sua senha ? <a href="#">Clique
-                                        aqui.</a></span>
+
+                                <div class="signin">
+                                    <span>Esqueceu a sua senha ? <a href="#">Clique
+                                            aqui.</a></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <script src="/login.js"></script>
-    </body>
-</html>
+            <script src="/js/account.js"></script>
+        </body>
+    </html>

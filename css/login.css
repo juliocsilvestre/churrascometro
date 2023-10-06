@@ -14,8 +14,93 @@
     border-bottom: 1px solid #ff0000;
 }
 
+.submit[disabled] {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.submit[disabled]:hover {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.input-field.login a.disabled {
+    color: #777;
+}
+
 .checkbox input:invalid+label {
     color: #ff0000;
+}
+
+.input-field .input.filled+label,
+.input-field label.filled {
+    transform: translateY(-0.5em);
+}
+
+.input-field input#cep {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-field input#cep+label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-field input#cep:focus~label,
+.input-field input#cep:valid~label {
+    transform: translateY(-0.6em);
+    font-size: 0.6em;
+}
+
+.error-message {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.btn.submit {
+    background-color: #a8abaf;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.btn.submit:hover {
+    background-color: red;
+}
+
+.info-icon {
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.info-message {
+    display: none;
+    font-size: 10px;
+    padding-bottom: 15px;
+    color: red;
+}
+
+.input-field input:invalid {
+    border-color: red;
+}
+
+.input-field input:invalid+.error-message {
+    display: block;
+}
+
+.error-message {
+    display: none;
+    color: red;
 }
 
 .checkbox {
@@ -42,7 +127,6 @@
     background-image: url("/assets/logochurrs.svg");
     background-position: center;
     background-size: cover;
-    /* Adicionando esta linha */
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 1.1);
     border-radius: 10px 0 0 10px;

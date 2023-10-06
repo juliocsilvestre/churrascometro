@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Churrascometro</title>
   </head>
@@ -17,23 +17,14 @@
         </p>
         <h3>Como Funciona:</h3>
         <p>
-          1. Carne: Digite o número de convidados e as preferências de carne no nosso intuitivo Churrascometro. Ele vai te dar uma estimativa precisa de quantos quilos de carne você vai precisar para garantir que todos saiam satisfeitos.
+          1. O calculo: Basta você nos informar quantos adultos vão estar presentes, quantas pessoas bebem bebidas alcoólicas e quantas crianças vão estar no seu churrasco.
         </p>
         <p>
-          2. Bebidas: Não se preocupe em ficar sem cerveja ou outras bebidas. O Churrascometro vai te dar uma sugestão sobre quantas unidades de bebida comprar com base no número de pessoas e no perfil do seu grupo.
-        </p>
-        <p>
-          Lembre-se, essas são apenas sugestões e podem variar dependendo dos apetites dos seus convidados. O importante é garantir que todos se divirtam!
+          É sempre bom ter uma variedade de bebidas disponíveis para atender a diferentes preferências.
         </p>
         <h3>Dicas Extras:</h3>
         <p>
-          - Não esqueça de considerar opções vegetarianas ou outras restrições alimentares dos seus convidados ao calcular a quantidade de carne.
-        </p>
-        <p>
-          - É sempre bom ter uma variedade de bebidas disponíveis para atender a diferentes preferências.
-        </p>
-        <p>
-          Agora, aproveite o seu churrasco com tranquilidade sabendo que o Churrascometro está aqui para te ajudar a planejar o evento perfeito!
+          - Lembre-se, essas são apenas sugestões e podem variar dependendo dos apetites dos seus convidados. O importante é garantir que todos se divirtam!
         </p>
         <button class="ok-button" onclick="fecharModal()">Ok, entendi</button>
 
@@ -41,14 +32,12 @@
     </div>
     <div class="container">
       <div class="grid">
-        <!-- area do texto de imagem -->
         <div class="text-content">
           <h1>
             Encontre a medida certa para o seu churrasco!
           </h1>
           <img src="/assets/img.svg" alt="" />
         </div>
-        <!-- area de calculo -->
         <div class="box-calculo">
           <img src="/assets/logochurrs.svg" alt="" />
           <div class="form">
@@ -61,6 +50,11 @@
                 placeholder="Adultos"
               />
             </div>
+            <div class="input-block">
+              <label for="bebeAlcool">Pessoas que bebem bebida alcoólica</label>
+              <input type="number" name="bebeAlcool" id="bebeAlcool" placeholder="Pessoas que bebem" />
+          </div>
+          
             <div class="input-block">
               <label for="criancas">Quantidade de crianças</label>
               <input
@@ -91,6 +85,6 @@
         </div>
       </div>
     </div>
-    <script src="/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
