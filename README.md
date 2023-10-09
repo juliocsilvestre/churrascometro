@@ -18,7 +18,7 @@ Este projeto foi desenvolvido para a Turma 1004 do programa Santander Coders. É
 5. Ao digitar o seu cep, confirme o endereço no botão `Confirmar endereço`
 6. Valide se o endereço contido está correto
 7. Preenchido os campos clique no botão de `Login`
-8. Ao entrar no churrascometro leia o Modal com as intrusções.
+8. Ao entrar no churrascometro leia o Modal com as instruções.
 9. Aproveite!
 
 ## Autor 👨‍💻
